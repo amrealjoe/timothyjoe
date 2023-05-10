@@ -1,0 +1,81 @@
+.contact {
+    padding: var(--space-md);
+    justify-content: center;
+    gap: var(--space-lg);
+}
+
+.contact>* {
+    flex: 2;
+}
+
+.contact .textbox {
+    display: grid;
+    place-content: center;
+}
+
+.contact .textbox .title {
+    font-size: var(--font-xl);
+    margin-bottom: var(--space-md);
+}
+
+.contact .textbox .tagline {
+    font-size: var(--font-xm);
+    margin-bottom: var(--space-lg);
+}
+
+.contact .textbox .link {
+    font-weight: bold;
+    max-width: 30%;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.contact .form label {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact .form .input-field,
+.contact .form .msg-field {
+    width: 462px;
+    border-radius: var(--radius-md);
+    background-color: white;
+    padding: 8px var(--space-sm);
+    border: .5px solid #cfcece;
+    outline: unset;
+    margin: var(--space-sm) 0;
+}
+
+.contact .form .input-field:focus,
+.contact .form .msg-field:focus,
+.contact .form .send-btn:hover,
+.contact .form .send-btn:focus {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, .098);
+    border-color: #e6e6e6;
+}
+
+.contact .form .msg-field {
+    width: 462px;
+}
+
+.contact .form .recapcht {
+    display: block;
+    height: 80px;
+    border: solid blue;
+    margin-bottom: var(--space-md);
+    max-width: 250px;
+}
+
+.contact .form .send-btn {
+    display: inline-block;
+    text-align: center;
+    outline: unset;
+    border-radius: var(--radius-sm);
+    border: #cfcece;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: var(--space-xs) var(--space-lg);
+    cursor: pointer;
+    min-width: 250px;
+}
