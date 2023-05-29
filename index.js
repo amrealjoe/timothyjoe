@@ -1,14 +1,14 @@
-// Add Express
+// ./index.js
 const express = require("express");
-// Initialize Express
+
 const app = express();
-// Create GET request
+const port = 3000;
+
 app.get("/", (req, res) => {
-  res.send("Express on Vercel");
+  res.send("Hello, Vercel!");
 });
-// Initialize server
-app.listen(5000, () => {
-  console.log("Running on port 5000.");
+
+app.listen(port, () => {
+  console.log(`Express app hosted on Vercel listening at port ${port}`);
 });
-// Export the Express API
 module.exports = app;
