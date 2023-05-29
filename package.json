@@ -1,12 +1,10 @@
 {
-  "name": "timothyjoe",
+  "name": "timtheme.dev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "dev": "node index"
+    "start": "nodemon ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -20,7 +18,13 @@
   },
   "homepage": "https://github.com/amrealjoe/timothyjoe#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
     "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "pug": "^3.0.2",
     "uuid": "^9.0.0"
   }
 }
