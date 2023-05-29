@@ -26,4 +26,5 @@ app.get("/api/item/:slug", (req, res) => {
 app.listen(port, () => {
   console.log(`Express app hosted on Vercel listening at port ${port}`);
 });
+
 module.exports = app;
