@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/amrealjoe/timothyjoe/issues"
   },
-  "homepage": "https://github.com/amrealjoe/timothyjoe#readme"
+  "homepage": "https://github.com/amrealjoe/timothyjoe#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
 }
