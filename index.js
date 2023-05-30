@@ -1,30 +1,39 @@
 // ./index.js
-const app = require("express")();
+var createError = require("http-errors");
+var express = require("express");
+var path = require("path");
+var cookieParser = require("cookie-parser");
+var logger = require("morgan");
+var app = express();
 const { v4 } = require("uuid");
+const port = process.env.PORT || 5000;
 
-const port = process.env.PORT || 5000
+// view engine setup
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "pug");
 
-app.get("/", (req, res) => {
-  const path = `/api/item/${v4()}`;
-  res.setHeader("Content-Type", "text/html");
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
-  res.end(`HOMEPAGE! Go to item: <a href="${path}">${path}</a>`);
-});
+app.use(logger("dev"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/api", (req, res) => {
-  const path = `/api/item/${v4()}`;
-  res.setHeader("Content-Type", "text/html");
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
-  res.end(`API PAGE! Go to item: <a href="${path}">${path}</a>`);
-});
+//Routes
+const Index = require("./routes/index");
+const About = require("./routes/about")
+const Project = require("./routes/projects")
+const Error = require("./routes/error")
 
-app.get("/api/item/:slug", (req, res) => {
-  const { slug } = req.params;
-  res.end(`Item: ${slug}`);
-});
+//Handlers
+app.use("/", Index);
+app.use("about", About);
+app.use("projects", Project);
 
-app.listen(port, () => {
-  console.log(`Express app hosted on Vercel listening at port ${port}`);
-});
+// catch 404 and forward to error handler
+app.use(function (req, res, next) {next(createError(404));});
+// error handler
+app.use(Error);
+
+app.listen(port, () => { console.log(`Listening on ${port}`);});
 
 module.exports = app;
