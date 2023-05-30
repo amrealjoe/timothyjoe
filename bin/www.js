@@ -4,15 +4,15 @@
  * Module dependencies.
  */
 //change app.js to index.js
-var app = require("../app.js")
-var debug = require("debug")("timtheme.dev:server");
+var app = require("../index.js")
+var debug = require("debug")("timothyjoe:server");
 var http = require("http");
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || "3000");
+var port = normalizePort(process.env.PORT || "5000");
 app.set("port", port);
 
 /**
