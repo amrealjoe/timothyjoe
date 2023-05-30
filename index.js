@@ -1,30 +1,46 @@
-// ./index.js
-const app = require("express")();
-const { v4 } = require("uuid");
 
-const port = process.env.PORT || 5000
+var createError = require("http-errors");
+var express = require("express");
+var path = require("path");
+var cookieParser = require("cookie-parser");
+var logger = require("morgan");
 
-app.get("/", (req, res) => {
-  const path = `/api/item/${v4()}`;
-  res.setHeader("Content-Type", "text/html");
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
-  res.end(`HOMEPAGE! Go to item: <a href="${path}">${path}</a>`);
+var indexRouter = require("./routes/index");
+var projectRouter = require("./routes/project");
+var aboutmeRouter = require("./routes/about-me");
+
+var app = express();
+
+// view engine setup
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "pug");
+
+app.use(logger("dev"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, "public")));
+
+//Routes handlers
+app.use("/", indexRouter);
+app.use("/project", projectRouter);
+app.use("/about-me", aboutmeRouter);
+
+// catch 404 and forward to error handler
+app.use(function (req, res, next) {
+  next(createError(404));
 });
 
-app.get("/api", (req, res) => {
-  const path = `/api/item/${v4()}`;
-  res.setHeader("Content-Type", "text/html");
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
-  res.end(`API PAGE! Go to item: <a href="${path}">${path}</a>`);
-});
+// error handler
+app.use(function (err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get("env") === "development" ? err : {};
 
-app.get("/api/item/:slug", (req, res) => {
-  const { slug } = req.params;
-  res.end(`Item: ${slug}`);
-});
-
-app.listen(port, () => {
-  console.log(`Express app hosted on Vercel listening at port ${port}`);
+  // render the error page
+  res.status(err.status || 500);
+  res.render("error");
 });
 
 module.exports = app;
+

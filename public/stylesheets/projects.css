@@ -1,0 +1,13 @@
+.projects {
+    padding: var(--space-lg);
+    background-color: var(--white);
+}
+
+
+.projects .separator {
+    margin: var(--space-lg) 0;
+}
+
+.project-item {
+    min-height: 350px;
+}

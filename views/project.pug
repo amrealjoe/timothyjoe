@@ -1,0 +1,40 @@
+extends layout 
+
+block navigation 
+    include includes/head
+block content 
+    .container 
+        .slide 
+        section.textblock 
+            h3.heading.heading--lg About The Project
+            p.body.body--lg Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, quod! Autem doloremque necessitatibus incidunt veniam possimus ad nam culpa esse iure odit natus excepturi enim, laborum, quidem similique consectetur eos?
+        span.notice Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit temporibus adipisci consequatur sequi, id soluta ut quisquam quis rerum pariatur facilis dolor molestias perferendis in dolorum itaque nesciunt fuga. Hic?
+        section.textblock
+            img(src="/images/placeholder.png", alt="Placeholder Image").picture.left
+            span
+                h3.heading.heading--lg Main Feautures 
+                p.body.body--lg Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis rem dolor autem aliquid commodi recusandae dicta dolorem quas assumenda eveniet libero deleniti tempore quis sit doloremque ullam, aspernatur, voluptatibus corrupti!
+        section.textblock.flex 
+            span.mediablock.left 
+                span.media.media--sm 
+                    img(src="/images/icons/swosh.svg").left-item 
+                    p.right-item Express.js
+                span.media.media--sm 
+                    img(src="/images/icons/swosh.svg").left-item 
+                    p.right-item Express.js
+                span.media.media--sm 
+                    img(src="/images/icons/swosh.svg").left-item 
+                    p.right-item Express.js
+            span
+                h4.heading.heading--lg Techology Stack
+                ul.list 
+                    li.item Lorem ipsum dolor 
+                    li.item sit amet consectetur, 
+                    li.item adipisicing elit. 
+                    li.item Natus distinctio 
+                p.body.body--log vitae consequatur reiciendis ducimus veritatis, repellendus error quasi soluta, porro impedit fuga quae fugit nulla! Dolore quae cum soluta debitis.
+        section.block-actions
+            a(href="#Demo", tab-index="7", title="Live Demo").btn.flex Live Demo
+                img(src="/images/icons/github.svg")
+block foot 
+    include includes/foot

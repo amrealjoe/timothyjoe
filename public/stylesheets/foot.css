@@ -1,0 +1,23 @@
+.main-foot {
+    background-color: var(--gray);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-lg);
+    height: 80px;
+}
+
+.main-foot .copyright {
+    color: var(--black);
+    font-size: var(--font-md);
+}
+
+.main-foot .social-links {
+    gap: var(--space-lg);
+}
+
+.main-foot .social-links>a {
+    color: var(--black);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: var(--font-md);
+}

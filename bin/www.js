@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 //change app.js to index.js
-var app = require("../index.js")
+var app = require("../app.js")
 var debug = require("debug")("timtheme.dev:server");
 var http = require("http");
 

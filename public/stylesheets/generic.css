@@ -1,0 +1,251 @@
+body {
+    background-color: var(--white);
+    font-size: 17px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+}
+
+.separator {
+    background-color: var(--white);
+    border-color: var(--white);
+}
+
+.sec-tagline {
+    color: var(--dark_gray);
+    max-width: 856px;
+    margin-bottom: var(--space-lg);
+    text-align: justify;
+}
+
+.space {
+    height: 80px;
+    display: block;
+}
+
+/** CONTAINER **/
+.container {
+    max-width: var(--container_width);
+    margin: 0 auto;
+}
+
+.container--sm {
+    max-width: 823px;
+    margin: 0 auto;
+}
+
+/** GRID **/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.grid>* {
+    grid-column: 2;
+}
+
+.grid-item.full-bleed {
+    grid-column: 1 / 5;
+    width: 100%;
+}
+
+.grid-item.left {
+    grid-column: 1 /3;
+}
+
+.grid-item.right {
+    grid-column: 3 / 5;
+}
+
+.grid-item {
+    height: calc(462px - 70px);
+}
+
+/** CARD **/
+
+.card {
+    position: relative;
+    /* height: calc(462px - 70px); */
+    background-color: var(--white);
+    padding: 3px;
+    border: .5px solid rgb(212, 210, 210);
+}
+
+.card .cover {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    height: calc(62px * 3);
+    background-color: rgba(250, 250, 250, 0.375);
+    padding: 3px;
+    font-size: var(--font-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-foot {
+    margin-top: auto;
+    gap: 4px;
+    margin-bottom: 4px;
+    justify-content: center;
+}
+
+.card-foot a {
+    text-decoration: none;
+    padding: 2px 4px;
+    gap: var(--space-md);
+    border: .5px solid var(--black);
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: unset;
+    margin: unset;
+}
+
+
+.full-bleed.card .overlay {
+    font-size: calc(var(--font-md) + 3px);
+}
+
+
+/** TEXTS SIZES **/
+.text--sm {
+    font-size: var(--font-sm);
+}
+
+.text--xs {
+    font-size: var(--font-xs);
+}
+
+.text--md {
+    font-size: var(--font-md);
+}
+
+.text--xm {
+    font-size: var(--font-xm);
+}
+
+.text--lg {
+    font-size: var(--font-lg);
+}
+
+.text--xl {
+    font-size: var(--font-xl);
+}
+
+/** FLEX **/
+.flex {
+    display: flex;
+}
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--col {
+    flex-direction: column;
+}
+
+.track--single {
+    flex: 1;
+}
+
+.track--double {
+    flex: 2;
+}
+
+/** LINK/ANCHOR TAG **/
+a {
+    color: var(--black);
+    font-weight: bold;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/** SLIDER **/
+.slider {
+    position: relative;
+    min-height: calc(462px - 78px);
+}
+
+.slider .slide-items {
+    display: flex;
+    height: calc(462px - 78px);
+    overflow: hidden;
+}
+
+.slide-items .item {
+    min-width: 100%;
+    height: inherit;
+    margin-right: 3px;
+    padding: unset;
+    border: unset;
+}
+
+.slider .btn-wrap {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    will-change: background-color;
+    transition: background-color .3s ease-in .1s;
+}
+
+.slider .btn-wrap:hover {
+    background-color: rgba(7, 7, 7, 0.612);
+    transition: background-color .3s ease-out;
+}
+
+.slider .btn-wrap#next {
+    right: 0;
+}
+
+.slider .slide-btn {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-rd);
+    margin: 3px;
+    border: .5px solid rgba(7, 7, 7, 0.612);
+    outline: unset;
+    cursor: pointer;
+}
+
+/** MEDIA BLOCK **/
+
+.media-block {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.media-item {
+    position: relative;
+    display: flex;
+    gap: var(--space-md);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .098);
+    margin-bottom: var(--space-md);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgb(209, 208, 208);
+    align-items: center;
+}
+
+.media--sm {
+    padding: var(--space-md);
+    min-width: 173px;
+}
+
+.media--sm .media-img {
+    width: 19px;
+    height: 19px;
+}
