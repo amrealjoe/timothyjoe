@@ -249,3 +249,25 @@ a:focus {
     width: 19px;
     height: 19px;
 }
+
+/** BUTTON **/
+.btn {
+    border: unset;
+    padding: calc(var(--space-sm) - 4px) var(--space-sm);
+    border-radius: var(--radius-xs);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--red);
+}
+
+.btn:active {
+    background-color: var(--green);
+}

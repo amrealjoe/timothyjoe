@@ -30,8 +30,8 @@
     display: inline-block;
     padding: calc(var(--space-sm) - 4px) var(--space-sm);
     text-decoration: none;
-    font-weight: bold;
     border-radius: var(--radius-xs);
+    font-weight: bold;
     will-change: color;
     transition: color .2s ease-out;
 }
