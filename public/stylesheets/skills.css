@@ -4,6 +4,7 @@
     padding: var(--space-lg);
 }
 
+/**  media-item class name is from the generic.css file **/
 .skills .media-item::after {
     content: attr(data-title);
     position: absolute;

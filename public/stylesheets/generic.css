@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
 }
 
-/** GRID **/
+/** GRID - is current not in use anywhere on the site**/
 
 .grid {
     display: grid;
@@ -45,6 +45,7 @@ body {
     grid-column: 2;
 }
 
+/**full bleed is not in used**/
 .grid-item.full-bleed {
     grid-column: 1 / 5;
     width: 100%;
@@ -66,10 +67,9 @@ body {
 
 .card {
     position: relative;
-    /* height: calc(462px - 70px); */
     background-color: var(--white);
-    padding: 3px;
     border: .5px solid rgb(212, 210, 210);
+    flex: 1;
 }
 
 .card .cover {
@@ -77,40 +77,45 @@ body {
     height: 100%;
 }
 
-.overlay {
+.card-overlay {
     position: absolute;
     bottom: 0;
-    height: calc(62px * 3);
-    background-color: rgba(250, 250, 250, 0.375);
-    padding: 3px;
-    font-size: var(--font-md);
     display: flex;
     flex-direction: column;
+    height: calc(62px * 3);
+    padding: 4px;
+    font-size: var(--font-md);
+    background-color: rgba(250, 250, 250, 0.853);
 }
 
 .card-foot {
     margin-top: auto;
     gap: 4px;
-    margin-bottom: 4px;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.card-foot>* {
+    flex: 2;
 }
 
 .card-foot a {
-    text-decoration: none;
-    padding: 2px 4px;
     gap: var(--space-md);
-    border: .5px solid var(--black);
-    width: auto;
     align-items: center;
     justify-content: center;
-    border-radius: unset;
-    margin: unset;
+    text-decoration: none;
+    padding: calc(var(--space-sm) - 4px) var(--space-sm);
+    border-radius: var(--radius-md);
+    font-weight: 900;
+    background-color: var(--blue);
 }
 
 
-.full-bleed.card .overlay {
-    font-size: calc(var(--font-md) + 3px);
+
+
+.card-foot a:hover {
+    text-decoration: none;
 }
+
 
 
 /** TEXTS SIZES **/
@@ -226,7 +231,19 @@ a:focus {
 
 .media-block {
     display: flex;
-    gap: var(--space-sm);
+}
+
+.media-items {
+    padding: var(--space-xs);
+}
+
+.media-header {
+    display: inline-block;
+    padding-bottom: var(--space-sm);
+    font-weight: 900;
+    font-size: var(--font-md);
+    text-align: center;
+    color: var(--lite_black);
 }
 
 .media-item {
@@ -248,4 +265,22 @@ a:focus {
 .media--sm .media-img {
     width: 19px;
     height: 19px;
+}
+
+/** BUTTON **/
+.btn {
+    border: unset;
+    padding: calc(var(--space-sm) - 4px) var(--space-sm);
+    border-radius: var(--radius-xs);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn:active {
+    transform: scale(.97);
 }
