@@ -226,7 +226,19 @@ a:focus {
 
 .media-block {
     display: flex;
-    gap: var(--space-sm);
+}
+
+.media-items {
+    padding: var(--space-xs);
+}
+
+.media-header {
+    display: inline-block;
+    padding-bottom: var(--space-sm);
+    font-weight: 900;
+    font-size: var(--font-md);
+    text-align: center;
+    color: var(--lite_black);
 }
 
 .media-item {
