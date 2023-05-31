@@ -10,4 +10,5 @@
 
 .project-item {
     min-height: 350px;
+    gap: var(--space-sm);
 }
