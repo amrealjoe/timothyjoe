@@ -45,6 +45,7 @@ body {
     grid-column: 2;
 }
 
+/**full bleed is not in used**/
 .grid-item.full-bleed {
     grid-column: 1 / 5;
     width: 100%;
@@ -80,18 +81,18 @@ body {
 .overlay {
     position: absolute;
     bottom: 0;
-    height: calc(62px * 3);
-    background-color: rgba(250, 250, 250, 0.375);
-    padding: 3px;
-    font-size: var(--font-md);
     display: flex;
     flex-direction: column;
+    height: calc(62px * 3);
+    padding: 4px;
+    font-size: var(--font-md);
+    background-color: rgba(250, 250, 250, 0.375);
 }
 
 .card-foot {
     margin-top: auto;
     gap: 4px;
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
     justify-content: center;
 }
 
