@@ -35,3 +35,7 @@
     will-change: color;
     transition: color .2s ease-out;
 }
+
+.nav-list * + * {
+    margin-left: var(--space-sm);
+}

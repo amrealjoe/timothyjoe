@@ -264,10 +264,6 @@ a:focus {
     color: var(--white);
 }
 
-.btn:hover {
-    background-color: var(--red);
-}
-
 .btn:active {
-    background-color: var(--green);
+    transform: scale(.97);
 }
