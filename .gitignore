@@ -4,3 +4,4 @@ target
 .env
 .env*
 .gitignore
+nodemon.json
