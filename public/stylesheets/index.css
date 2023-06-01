@@ -1,6 +1,7 @@
 @import url("reset.css");
 @import url("custom.css");
 @import url("generic.css");
+
 /** components styles **/
 @import url("head.css");
 @import url("intro.css");
@@ -9,5 +10,8 @@
 @import url("foot.css");
 @import url("skills.css");
 @import url("textbox.css");
+@import url("cards.css");
+
 /** pages stylesheet **/
 @import url("pages/project.css");
+@import url("pages/blog.css");
