@@ -22,12 +22,14 @@ app.use(express.static(path.join(__dirname, "public")));
 const Index = require("./routes/index");
 const About = require("./routes/about")
 const Project = require("./routes/projects")
+const Blog = require("./routes/blog")
 const Error = require("./routes/error")
 
 //Handlers
 app.use("/", Index);
 app.use("about", About);
 app.use("projects", Project);
+app.use("blog", Blog);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {next(createError(404));});
