@@ -6,7 +6,7 @@ navItems.forEach((item) => {
       case "about me":
         item.style.color = "#00b350";
         break;
-      case "projects":
+      case "blog":
         item.style.color = "#1c5df5";
         break;
       case "resume":
