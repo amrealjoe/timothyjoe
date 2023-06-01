@@ -29,6 +29,7 @@
 .nav-list .nav-item {
     display: inline-block;
     padding: calc(var(--space-sm) - 4px) var(--space-sm);
+    border: thin solid;
     text-decoration: none;
     border-radius: var(--radius-xs);
     font-weight: bold;
@@ -38,4 +39,8 @@
 
 .nav-list * + * {
     margin-left: var(--space-sm);
+}
+
+.nav-list .nav-item:active {
+    transform: scale(.98);
 }
