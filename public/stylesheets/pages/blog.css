@@ -1,0 +1,92 @@
+/** TODO: Move all modular css to specific file ex: cards.css or banner.css **/
+
+.banner {
+    background-color: #141424;
+    /* height: 200px; */
+    gap: var(--space-sm);
+    padding: 30px;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.banner-tagline {
+    font-size: var(--font-lg);
+    font-weight: normal;
+    color: var(--lite_gray);
+    margin-bottom: 12px;
+}
+
+
+.form {
+    background-color: #69676b;
+    border-radius: var(--radius-xs);
+    padding: 12px 7px;
+}
+
+.form .icon {
+    margin: 0 12px;
+
+}
+
+.form__input {
+    display: block;
+    height: 35px;
+    outline: unset;
+    border: unset;
+    width: 100%;
+    background-color: transparent;
+    color: var(--lite_gray);
+}
+
+/**TODO: move tile to its file - tile.css **/
+.tilebox {
+    margin: 12px 0;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 250px;
+    border-radius: var(--radius-xs);
+    /** move color to custom.css**/
+    border: thin solid #e3e3e3;
+    padding: var(--space-xs);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.072);
+}
+
+.tile:hover {
+    border: thin solid #0c0c1c;
+}
+
+.tile__cover {
+    border-radius: var(--radius-xs);
+}
+
+.tile__title {
+    line-height: 1.2;
+    margin: var(--space-md) 0;
+}
+
+.tile__footer {
+    margin-bottom: 7px;
+    align-items: center;
+    gap: var(--space-md);
+    color: #3b3b4b;
+    font-weight: normal;
+}
+
+.tile__footer span {
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.tile__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: thin solid #69676b;
+}

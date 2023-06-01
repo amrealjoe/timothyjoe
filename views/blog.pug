@@ -3,7 +3,60 @@ extends layout
 block navigation 
     include includes/head
 block content 
+    .banner
+        .container 
+            h1.banner-title Articles
+            h3.banner-tagline Embracing the trends. Learning the Art. Using the tech.
+            form(action="").form.flex 
+                img(src="images/icons/swosh.svg", alt="alt").icon 
+                input(type="text", placeholder="Search for articles...").form__input
     .container
-        p Welcome to an emerging blog
+        .tilebox.flex 
+            .tile 
+                img(src="/images/RE4wHfR.jpg", alt="alt").tile__cover
+                p.tile__title Does OpenAI offer Multi-factor authentication (MFA) / Two-Factor Authentication (2FA) ?
+                footer.flex.tile__footer
+                    span.flex
+                        img(src="/images/tim_theme.png", alt="alt").tile__avatar 
+                        h5.tile__author Timothy T. Joe 
+                    span &#8226;
+                    h5.tile__pud-date  6/1/2023
+            .tile 
+                img(src="/images/RE4wHfR.jpg", alt="alt").tile__cover
+                p.tile__title Does OpenAI offer Multi-factor authentication (MFA) / Two-Factor Authentication (2FA) ?
+                footer.flex.tile__footer
+                    span.flex
+                        img(src="/images/tim_theme.png", alt="alt").tile__avatar 
+                        h5.tile__author Timothy T. Joe 
+                    span &#8226;
+                    h5.tile__pud-date  6/1/2023
+            .tile 
+                img(src="/images/RE4wHfR.jpg", alt="alt").tile__cover
+                p.tile__title Does OpenAI offer Multi-factor authentication (MFA) / Two-Factor Authentication (2FA) ?
+                footer.flex.tile__footer
+                    span.flex
+                        img(src="/images/tim_theme.png", alt="alt").tile__avatar 
+                        h5.tile__author Timothy T. Joe 
+                    span &#8226;
+                    h5.tile__pud-date  6/1/2023
+            .tile 
+                img(src="/images/RE4wHfR.jpg", alt="alt").tile__cover
+                p.tile__title Does OpenAI offer Multi-factor authentication (MFA) / Two-Factor Authentication (2FA) ?
+                footer.flex.tile__footer
+                    span.flex
+                        img(src="/images/tim_theme.png", alt="alt").tile__avatar 
+                        h5.tile__author Timothy T. Joe 
+                    span &#8226;
+                    h5.tile__pud-date  6/1/2023
+            .tile 
+                img(src="/images/RE4wHfR.jpg", alt="alt").tile__cover
+                p.tile__title Does OpenAI offer Multi-factor authentication (MFA) / Two-Factor Authentication (2FA) ?
+                footer.flex.tile__footer
+                    span.flex
+                        img(src="/images/tim_theme.png", alt="alt").tile__avatar 
+                        h5.tile__author Timothy T. Joe 
+                    span &#8226;
+                    h5.tile__pud-date  6/1/2023
+    .space
 block foot 
     include includes/foot
