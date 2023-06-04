@@ -2,7 +2,7 @@
 
 .banner {
     background-color: #141424;
-    /* height: 200px; */
+    min-height: 278px;
     gap: var(--space-sm);
     padding: 30px;
 }
@@ -44,7 +44,7 @@
 
 /**TODO: move tile to its file - tile.css **/
 .tilebox {
-    margin: 12px 0;
+    margin: 6% 0;
     gap: var(--space-md);
     flex-wrap: wrap;
 }
