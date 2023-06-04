@@ -1,7 +1,0 @@
-node_modules
-.vscode
-target
-.env
-.env*
-.gitignore
-nodemon.json
