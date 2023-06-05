@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    isolation: isolate;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+img,
+svg,
+picture,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
+/** button **/
+button {
+    border: thin solid var(--dark_gray);
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: 900;
+    color: var(--black);
+    background-color: var(--lite_gray);
+}
