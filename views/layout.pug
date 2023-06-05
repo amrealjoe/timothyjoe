@@ -2,10 +2,15 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/imports.css')
-    link(rel="shortcut icon", href="/icons/favicon.svg", type="image/x-icon")
-    script(src="/scripts/generic.js") 
+    block meta 
+      meta(name="keywords", content="Timothy T. Joe, Liberian Joe, Full Stack Engineer in Liberia")
+      meta(name="description", content="Full Stack Web Developer")
+    block css
+      link(rel='stylesheet', href='/stylesheets/imports.css')
+      link(rel="shortcut icon", href="/icons/favicon.svg", type="image/x-icon")
+    block scripts
+      script(src="/scripts/generic.js", defer) 
   body
     block navigation
     block content
-    block foooter
+    block footer
