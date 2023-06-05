@@ -63,6 +63,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:active {
+    transform: scale(.97);
+}
+
 a {
     color: var(--blue);
     text-decoration: none;

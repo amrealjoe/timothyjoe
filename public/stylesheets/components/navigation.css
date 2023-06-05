@@ -1,4 +1,37 @@
 nav.navigation {
-    background-color: var(--grey);
-    padding: 2rem 4px;
+    background-color: var(--lite_blue);
+}
+
+section.nav-inner {
+    max-width: 900px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span.nav-links {
+    display: flex;
+    align-items: center;
+}
+a.nav-link {
+    padding: 8px 16px;
+    color: var(--black);
+    font-weight: bolder;
+    border-bottom: 2px solid var(--lite_blue);
+}
+
+a.nav-link:hover {
+    border-bottom-color: var(--black);
+}
+a.nav-link:active {
+    transform: scale(.97);
+}
+
+a.nav-link.active {
+    border-bottom-color: var(--black);
+}
+
+button.nav-btn:hover {
+    color: var(--blue);
+    border-color: var(--blue);
 }

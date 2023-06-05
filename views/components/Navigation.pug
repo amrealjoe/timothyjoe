@@ -1,4 +1,7 @@
-extend ../Layout
-
 nav.navigation
-    h1 Navigation
+    section.nav-inner 
+        a(href="/").nav-link.active Home
+        span.nav-links
+            a(href="/blog").nav-link Blog 
+            a(href="/profile").nav-link Profile
+            button.nav-btn Get Resume 
