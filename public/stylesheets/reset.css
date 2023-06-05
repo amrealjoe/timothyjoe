@@ -50,10 +50,11 @@ h6 {
 
 /** button **/
 button {
-    border: thin solid var(--dark_gray);
-    border-radius: 4px;
-    padding: 6px 12px;
-    font-weight: 900;
+    font-size: small;
     color: var(--black);
-    background-color: var(--lite_gray);
+    background-color: var(--lite_blue);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid var(--gray);
+    padding: 4px 17px;
 }
