@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "dev": "start http://localhost:5050 && nodemon ./bin/www"
+    "dev": "start http://localhost:3000 && nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
