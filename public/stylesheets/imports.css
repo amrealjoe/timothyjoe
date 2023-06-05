@@ -1,4 +1,6 @@
 @import url("./custom.css");
 @import url("./reset.css");
+@import url("./global.css");
 @import url("./components/navigation.css");
 @import url("./components/introduction.css");
+@import url("./components/technology.css");

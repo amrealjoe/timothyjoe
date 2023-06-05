@@ -1,0 +1,27 @@
+div.container {
+    max-width: 900px;
+    margin: var(--space-xl) auto;
+    overflow: auto;
+    /* min-height: 380px; */
+}
+
+div.container.blue {
+    background-color: #128bef20;
+}
+
+div.container .header {
+    background-color: #128bef90;
+    padding: var(--space-sm);
+}
+
+div.container .header h3 {
+    color: var(--dark_blue);
+}
+
+div.container .content {
+    margin: var(--space-xl);
+}
+
+a.link-btn {
+    padding: var(--space-sm);
+}

@@ -1,0 +1,41 @@
+div.technology>.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.technology .flexbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+div.technology .flexbox .boxhead {
+    padding: var(--space-sm);
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    background-color: #f8f8f8;
+}
+
+div.technology .flexbox>*+* {
+    border: 1px solid #e2e2e2;
+    border-top: unset;
+}
+
+div.technology .mediablock {
+    display: flex;
+    font-size: var(--font-sm);
+}
+
+div.technology .mediablock .media {
+    width: 55px;
+    height: 55px;
+    background-color: var(--lite_gray);
+}
+
+div.technology .mediablock .block {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-xs);
+}
