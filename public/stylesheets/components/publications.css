@@ -31,6 +31,7 @@ div.publication .contents .article .media {
 
 div.publication .contents .article .block {
     padding: var(--space-sm);
+    overflow: hidden;
 }
 
 div.publication .contents .article .block h2 {

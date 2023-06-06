@@ -10,7 +10,31 @@ footer.footer .content {
 }
 
 footer.footer .content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+footer.footer .content .header .name h3 {
     font-size: var(--font-xl);
+}
+
+footer.footer .content .header .name small {
+    font-size: var(--font-sm);
+    display: block;
+}
+
+footer.footer .content .header .social {
+    display: flex;
+    gap: var(--space-sm);
+    min-width: calc(50px * 4);
+}
+
+footer.footer .content .header .social img {
+    width: 50px;
+    height: 43px;
 }
 
 footer.footer .content .flexbox {
@@ -33,5 +57,3 @@ footer.footer .content .flexbox .updated .icon {
     height: 20px;
     border: 1px solid black;
 }
-
-

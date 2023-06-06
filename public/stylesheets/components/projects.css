@@ -32,6 +32,7 @@
 .projects .content .block {
     width: calc(137px * 2 + 6px);
     padding: var(--space-sm);
+    overflow: hidden;
 }
 
 .projects .content .block p {
