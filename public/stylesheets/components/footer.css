@@ -43,6 +43,10 @@ footer.footer .content .flexbox {
     margin: var(--space-md) 0;
 }
 
+footer.footer .content div.flexbox {
+    align-items: center;
+}
+
 footer.footer .content .updated {
     padding: 4px;
     background-color: rgb(7, 192, 143);
@@ -50,9 +54,21 @@ footer.footer .content .updated {
     align-items: center;
     color: white;
     gap: 4px;
+    max-height: 35px;
 }
 
 footer.footer .content .flexbox .updated .icon {
     width: 20px;
     height: 20px;
+}
+
+footer.footer .content .powered {
+    gap: var(--space-xs);
+    align-items:center;
+    background-color: var(--blue);
+}
+
+footer.footer .content .powered .icon {
+    width: 30px;
+    height: 30px;
 }
