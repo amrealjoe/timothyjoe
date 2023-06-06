@@ -2,6 +2,7 @@ div.technology>.content {
     display: flex;
     flex-wrap: wrap;
     align-items: last baseline;
+    gap: var(--space-xs);
 }
 
 div.technology .flexbox {
@@ -39,5 +40,8 @@ div.technology .mediablock .block {
     display: flex;
     flex-direction: column;
     padding: var(--space-xs);
+}
+
+div.technology .mediablock .block .body {
     line-height: normal;
 }
