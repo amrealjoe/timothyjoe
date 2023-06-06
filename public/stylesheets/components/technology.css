@@ -1,7 +1,7 @@
 div.technology>.content {
     display: flex;
     flex-wrap: wrap;
-    align-items: last baseline;
+    align-items: start baseline;
     gap: 4px;
 }
 
@@ -33,7 +33,8 @@ div.technology .mediablock {
 
 div.technology .mediablock .media {
     width: 55px;
-    background-color: var(--lite_blue);
+    background-color: #f7f7f7;
+    padding: var(--space-xs);
 }
 
 div.technology .mediablock .block {
