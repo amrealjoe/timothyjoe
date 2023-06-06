@@ -1,6 +1,6 @@
 .blog.container {
     max-width: 900px;
-    margin: var(--space-md) auto;
+    margin: 0 auto;
     font-size: var(--font-md);
     padding: var(--space-md);
 }
