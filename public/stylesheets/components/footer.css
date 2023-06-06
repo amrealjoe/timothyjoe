@@ -1,0 +1,37 @@
+footer.footer {
+    background-color: var(--lite_blue);
+    min-height: 137px;
+}
+
+footer.footer .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-md);
+}
+
+footer.footer .content .header {
+    font-size: var(--font-xl);
+}
+
+footer.footer .content .flexbox {
+    display: flex;
+    gap: var(--space-sm);
+    margin: var(--space-md) 0;
+}
+
+footer.footer .content .flexbox .updated {
+    padding: 4px;
+    background-color: rgb(7, 192, 143);
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 4px;
+}
+
+footer.footer .content .flexbox .updated .icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+
