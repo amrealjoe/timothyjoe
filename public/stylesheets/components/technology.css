@@ -2,7 +2,7 @@ div.technology>.content {
     display: flex;
     flex-wrap: wrap;
     align-items: last baseline;
-    gap: var(--space-xs);
+    gap: 4px;
 }
 
 div.technology .flexbox {
@@ -15,25 +15,25 @@ div.technology .flexbox {
 div.technology .flexbox .boxhead {
     padding: var(--space-sm);
     text-align: center;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #bdbcbc;
     background-color: #f8f8f8;
 }
 
 div.technology .flexbox>*+* {
-    border: 1px solid #e2e2e2;
+    border: 1px solid #bdbcbc;
     border-top: unset;
 }
 
 div.technology .mediablock {
     display: flex;
     font-size: var(--font-sm);
-    width: 210px;
+    width: 207px;
     height: 55px;
 }
 
 div.technology .mediablock .media {
     width: 55px;
-    background-color: var(--lite_gray);
+    background-color: var(--lite_blue);
 }
 
 div.technology .mediablock .block {
