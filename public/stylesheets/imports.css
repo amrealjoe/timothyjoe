@@ -1,9 +1,12 @@
 @import url("./custom.css");
 @import url("./reset.css");
 @import url("./global.css");
+/** Components **/
 @import url("./components/navigation.css");
 @import url("./components/introduction.css");
 @import url("./components/technology.css");
 @import url("./components/projects.css");
 @import url("./components/publications.css");
 @import url("./components/footer.css");
+/** Page **/
+@import url("./pages/blog.css");
