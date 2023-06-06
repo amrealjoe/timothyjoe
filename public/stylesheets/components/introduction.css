@@ -25,6 +25,7 @@
 
 .introduction .btn-group .link-btn {
     padding: 4px;
+    border: 1px solid var(--lite_gray);
     display: flex;
     align-items: center;
     color: var(--black);
@@ -40,6 +41,5 @@
 .introduction .btn-group .link-btn img {
     width: 25px;
     height: 25px;
-    border: 1px solid black;
     margin-right: 3px;
 }
