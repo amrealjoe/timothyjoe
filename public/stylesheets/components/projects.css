@@ -37,4 +37,5 @@
 .projects .content .block p {
     margin-top: var(--space-sm);
     line-height: 1.25;
+    color: var(--gray);
 }
