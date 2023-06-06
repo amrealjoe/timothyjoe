@@ -39,11 +39,11 @@ footer.footer .content .header .social img {
 
 footer.footer .content .flexbox {
     display: flex;
-    gap: var(--space-sm);
+    gap: var(--space-md);
     margin: var(--space-md) 0;
 }
 
-footer.footer .content .flexbox .updated {
+footer.footer .content .updated {
     padding: 4px;
     background-color: rgb(7, 192, 143);
     display: flex;
