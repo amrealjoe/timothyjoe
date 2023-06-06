@@ -1,0 +1,40 @@
+.projects>section.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.projects .content .mediablock {
+    position: relative;
+    background-color: white;
+    display: flex;
+    height: 133px;
+    border: 1px solid #bdbcbc;
+}
+
+.projects .content .mediablock .category {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding:4px;
+    background-color: #f4a208;
+    color: white;
+    font-size: var(--font-sm);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.projects .content .mediablock .media {
+    width: 137px;
+    border-right: 1px solid #bdbcbc;
+}
+
+.projects .content .block {
+    width: calc(137px * 2 + 6px);
+    padding: var(--space-sm);
+}
+
+.projects .content .block p {
+    margin-top: var(--space-sm);
+    line-height: 1.25;
+}

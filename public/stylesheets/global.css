@@ -2,15 +2,26 @@ div.container {
     max-width: 900px;
     margin: var(--space-xl) auto;
     overflow: auto;
-    /* min-height: 380px; */
 }
 
 div.container.blue {
     background-color: #128bef20;
+    border: 1px solid #128befb0;
+}
+div.container.blue .header {
+    background-color: #128bef97;
+}
+div.container.green {
+    background-color: #04a25345;
+    border: 1px solid #01ae4fb0;
+    min-height: 250px;
+}
+div.container.green .header {
+    background-color: #00b35197;
 }
 
+
 div.container .header {
-    background-color: #128bef90;
     padding: var(--space-sm);
 }
 
