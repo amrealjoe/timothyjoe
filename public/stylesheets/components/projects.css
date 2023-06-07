@@ -1,5 +1,3 @@
-.projects>div.content {}
-
 .projects>div.content .flexbox {
     display: flex;
     flex-wrap: wrap;
