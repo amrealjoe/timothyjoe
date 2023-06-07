@@ -60,6 +60,11 @@
     display: flex;
     max-height: 190px;
     border-bottom: 1px solid var(--dark_blue);
+    cursor: pointer;
+}
+
+.blog .contents .mediablock:hover {
+    background-color: #128bef0f;
 }
 
 .blog .contents .mediablock .media {
@@ -93,7 +98,7 @@
 }
 
 .blog .contents .loader:hover {
-    background-color: hsl(0, 7%, 97%);
+    background-color: #128bef0f;
 }
 
 .blog .contents .loader:active>* {
