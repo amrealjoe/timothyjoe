@@ -13,14 +13,14 @@ div.publication .header {
 }
 div.publication .contents {
     margin: var(--space-md);
-    border: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
     border-bottom: unset;
-
 }
 
 div.publication .contents .article {
     display: flex;
-    border-bottom: 1px solid var(--gray);
+    border: 1px solid var(--gray);
+    border-top: unset;
     height: 133px;
 }
 

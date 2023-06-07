@@ -8,14 +8,17 @@ div.container.blue {
     background-color: #128bef20;
     border: 1px solid #128befb0;
 }
+
 div.container.blue .header {
     background-color: #128bef97;
 }
+
 div.container.green {
     background-color: #04a25345;
     border: 1px solid #01ae4fb0;
     min-height: 250px;
 }
+
 div.container.green .header {
     background-color: #00b35197;
 }
@@ -33,6 +36,39 @@ div.container .content {
     margin: var(--space-xl);
 }
 
+/** CUSTOM LINKS **/
 a.link-btn {
     padding: var(--space-sm);
+}
+
+a.link.large {
+    display: block;
+    text-align: center;
+    padding: var(--space-sm) 0;
+    margin-top: var(--space-md);
+    width: 100%;
+    color: inherit;
+}
+a.link.large:active {
+    transform: scale(.98);
+}
+
+a.link.large.blue {
+    background-color: #128bef20;
+    border: 1px solid #128bef;
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+a.link.large.green {
+    background-color: #04a25345;
+    border: 1px solid #01ae4f;
+    color: #017736;
+    font-weight: bolder;
+}
+
+a.link.large.plain {
+    border: 1px solid var(--dark_blue);
+    color: var(--dark_blue);
+    font-weight: bolder;
 }

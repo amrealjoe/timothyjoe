@@ -1,4 +1,6 @@
-.projects>section.content {
+.projects>div.content {}
+
+.projects>div.content .flexbox {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -16,7 +18,7 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    padding:4px;
+    padding: 4px;
     background-color: #7e007e;
     color: white;
     font-size: var(--font-sm);
