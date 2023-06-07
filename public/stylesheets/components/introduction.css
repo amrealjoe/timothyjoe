@@ -16,30 +16,22 @@
     text-align: justify;
 }
 
-.introduction .btn-group {
-    display: flex;
-    align-items: center;
-    margin-top: var(--space-md);
-    gap: var(--space-md)
-}
-
-.introduction .btn-group .link-btn {
-    padding: 4px;
-    border: 1px solid var(--lite_gray);
-    display: flex;
-    align-items: center;
-    color: var(--black);
-    font-weight: bold;
-    background-color: var(--lite_blue);
-    border-radius: 2px;
-}
-
-.introduction .btn-group .link-btn:hover {
-    color: var(--blue);
-}
-
 .introduction .btn-group .link-btn img {
     width: 25px;
     height: 25px;
     margin-right: 3px;
 }
+
+/** SMALL DEVICE **/
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .introduction .figure {
+        width: calc(295px - 150px);
+        clear: left;
+    }
+
+    .introduction .textbox p {
+        font-size: var(--font-sm);
+    }
+}
+
+@media only screen and (min-width: 769px) {}
