@@ -8,6 +8,8 @@
 @import url("./components/projects.css");
 @import url("./components/publications.css");
 @import url("./components/footer.css");
+@import url("./components/dialog.css");
+
 /** Page **/
 @import url("./pages/profile.css");
 @import url("./pages/blog.css");
