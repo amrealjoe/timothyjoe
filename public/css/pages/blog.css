@@ -31,6 +31,11 @@
     padding: unset;
 }
 
+.blog .form .icon img {
+    width: 30px;
+    height: 30px;
+}
+
 .blog .form .results {
     position: absolute;
     top: 45px;
