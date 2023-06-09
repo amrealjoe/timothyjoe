@@ -4,9 +4,6 @@ import path from "path"
 import cookieParser from "cookie-parser";
 import logger from "morgan"
 
-// var homeRouter = require('./routes/home');
-// var profileRouter = require('./routes/profile');
-// var blogRouter = require('./routes/blog');
 import homeRouter from "./routes/home"
 import profileRouter from "./routes/profile"
 import blogRouter from "./routes/blog"
