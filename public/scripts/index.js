@@ -1,5 +1,6 @@
-import $ from "jquery";
+import $ from 'jquery'
 
 $(() => {
-    $(".active").css("background-color", "red")
+    const active = $(".active").css("background-color", "red")
+    console.log(active)
 });
