@@ -1,0 +1,43 @@
+extends ./layout 
+block meta
+    meta(name="description", content="Embracing the trends. Learning the Art. Using the techs.")
+block header 
+    include ./components/Navigation
+block body 
+    .blog.container 
+        header.flexbox.header
+            h2 Blog Articles 
+            include ./components/Searcher 
+        div.contents 
+            section.mediablock 
+                img(src="/images/img.png", alt="alt").media 
+                span.block 
+                    h3.title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    p.body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    span.footer 
+                        small.category Marchine Learning &#8226; 7:01 AM 6/7/2023 
+            section.mediablock 
+                img(src="/images/img.png", alt="alt").media 
+                span.block 
+                    h3.title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    p.body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    span.footer 
+                        small.category Marchine Learning &#8226; 7:01 AM 6/7/2023 
+            section.mediablock 
+                img(src="/images/img.png", alt="alt").media 
+                span.block 
+                    h3.title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    p.body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    span.footer 
+                        small.category Marchine Learning &#8226; 7:01 AM 6/7/2023 
+            section.mediablock 
+                img(src="/images/img.png", alt="alt").media 
+                span.block 
+                    h3.title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    p.body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    span.footer 
+                        small.category Marchine Learning &#8226; 7:01 AM 6/7/2023 
+            span.loader 
+                p Load More 
+block footer 
+    include ./components/Footer 
