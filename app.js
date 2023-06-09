@@ -1,12 +1,15 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+import createError from "http-errors";
+import express from "express"
+import path from "path" 
+import cookieParser from "cookie-parser";
+import logger from "morgan"
 
-var homeRouter = require('./routes/home');
-var profileRouter = require('./routes/profile');
-var blogRouter = require('./routes/blog');
+// var homeRouter = require('./routes/home');
+// var profileRouter = require('./routes/profile');
+// var blogRouter = require('./routes/blog');
+import homeRouter from "./routes/home"
+import profileRouter from "./routes/profile"
+import blogRouter from "./routes/blog"
 
 var app = express();
 
