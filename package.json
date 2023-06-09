@@ -2,11 +2,10 @@
   "name": "timothyjoe",
   "version": "0.0.0",
   "private": true,
-  "main": "app.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "babel-node ./bin/www",
-    "dev": "start http://localhost:3000 && babel-node ./bin/www"
+    "dev": "babel-node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
