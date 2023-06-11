@@ -1,0 +1,56 @@
+.sidebar {
+    min-width: 100%;
+    background-color: rgba(0, 0, 0, 0.138);
+    position: absolute;
+    top: 0;
+    z-index: 8000;
+}
+
+.tabs {
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    left: 0;
+    top: 0;
+}
+
+.tabs .closeSidebarBtn {
+    display: grid;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+    background-color: var(--lite_gray);
+    float: right;
+    clear: both;
+}
+
+.tabs .tab {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    color: var(--black);
+}
+
+.tabs .tab:hover {
+    background-color: var(--lite_blue);
+    cursor: pointer;
+}
+
+.tabs .tab img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--lite_blue);
+    background-color: var(--white);
+}
+
+.tabs .tab .text {
+    font-weight: 900;
+
+}
+
+.tabs button {
+    display: block;
+    width: 90%;
+    height: 34px;
+    margin: var(--space-md);
+}

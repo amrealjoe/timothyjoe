@@ -9,6 +9,7 @@
 @import url("./components/publications.css");
 @import url("./components/footer.css");
 @import url("./components/dialog.css");
+@import url("./components/Sidebar.css");
 
 /** Page **/
 @import url("./pages/profile.css");
