@@ -24,6 +24,11 @@ div.publication .contents .article {
     height: 133px;
 }
 
+div.publication .contents .article:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
 div.publication .contents .article .media {
     width: 137px;
     border-right: 1px solid var(--gray);

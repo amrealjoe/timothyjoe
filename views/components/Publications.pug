@@ -1,7 +1,7 @@
 div.publication 
     header.header Recent Articles
     div.contents 
-        article.article 
+        article(onClick='navigate("/newpage")').article 
             img(src="/images/img.png", alt="").media 
             section.block 
                 h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit...
@@ -22,3 +22,7 @@ div.publication
                 h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit...
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod consectetur adipisicing elit, sed do...
         a(href="/blog").link.large.plain See More 
+script. 
+    function navigate(url) {
+        window.location.href = url;
+    }
